@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-9oeBC9wWPGTA4i8edhhxBnXKyGOU/kw68cPNimiR2d8=",
+    "strip_prefix": "iterator-boost-1.78.0",
+    "url": "https://github.com/boostorg/iterator/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-YQxnad4zy/hIOaiRTvMWZFTvlfzAxpHoI54OrQDksXQ=",
+        "MODULE.bazel": "sha256-jaTnHnk3yXTGgOURVn/ST/R5m6kMuN7bph6ic+tW1Yk="
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-8sVVZ1lV4IUfn5W5xyINAWRcTbB9Wr+bPCMELR3VcMo=",
+    "strip_prefix": "multi_index-boost-1.78.0",
+    "url": "https://github.com/boostorg/multi_index/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-4yvWpTPW4oJah7S5BBCtKg+yz7fEk+4UZiRml7jTpQs=",
+        "MODULE.bazel": "sha256-Ufna4isCOWSr2MUBQ3duxwOlttfvfOafV5wnqLimAlw="
+    }
+}

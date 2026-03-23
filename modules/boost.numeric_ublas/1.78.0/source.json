@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/boostorg/ublas/archive/refs/tags/boost-1.78.0.tar.gz",
+    "integrity": "sha256-VdnOME1/lc6P+YvK9RUAKc4GdrYhUZmeAyFAveIi3NY=",
+    "strip_prefix": "ublas-boost-1.78.0",
+    "overlay": {
+        "BUILD.bazel": "sha256-q+5MvrrFYXMUACKPDDr1ZzV2yVeIfkMw56jGbnjoyOs=",
+        "MODULE.bazel": "sha256-QQG23BXhi1+QefGghrmaRXJH2s9HAdvV8wTuYxv889M="
+    }
+}

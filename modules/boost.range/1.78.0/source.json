@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-2gzTkxk+TqunLq+7wJ4smipVPeM4eecCw/IhjFnLXC8=",
+    "strip_prefix": "range-boost-1.78.0",
+    "url": "https://github.com/boostorg/range/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-kVBHYrR0CvBGFQXEejhF9s5fCjfZsaccr0NtWlvWV28=",
+        "MODULE.bazel": "sha256-uSIuenE7+j9ieH083b4/Wx9/zC7DIGvThmHjPv5Pg7E="
+    }
+}

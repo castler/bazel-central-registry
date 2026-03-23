@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-bCzeGb0y3sSr2k00t/SEj03VEfPX9OdC/EsN3IAUr+U=",
+    "strip_prefix": "winapi-boost-1.78.0",
+    "url": "https://github.com/boostorg/winapi/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-yWQv9wKLpt2FWr2H5u8iDamszqUteM9UWbMoCYZzaq0=",
+        "MODULE.bazel": "sha256-3KzBt2snDPiKPylcZH9A9ZrYZTD9Ul/BsF9nD14SEqc="
+    }
+}

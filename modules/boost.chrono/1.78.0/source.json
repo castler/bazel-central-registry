@@ -1,0 +1,12 @@
+{
+    "integrity": "sha256-Vp0LAGg9AbYivFa8ixFZoYBdGiqr8naXiQJJPzvluDw=",
+    "strip_prefix": "chrono-boost-1.78.0",
+    "url": "https://github.com/boostorg/chrono/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-Pkp5yIsEM2zu80AU7qemkxhmx7GWLsgByaa2n4EyP38=",
+        "MODULE.bazel": "sha256-CSIsWNgo0iA8KDneG/M60HbVyuky4Gq4HoplvedzOxE=",
+        "test/BUILD.bazel": "sha256-iBpPZ77N2zyBz4ym9QqFIeGZDSsW3hol5Bd2hsR59dk=",
+        "test/MODULE.bazel": "sha256-ZS1AeSiR2T0GQOt83dcRMRf4yEKd0YS+a3E4jthr9hs="
+    }
+}

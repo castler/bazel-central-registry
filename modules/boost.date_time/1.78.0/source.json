@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-PZCPD4YXCaDKGlsC0pFv3FXcPwFmZgSdHs8bS+mwkYs=",
+    "strip_prefix": "date_time-boost-1.78.0",
+    "url": "https://github.com/boostorg/date_time/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-yw7n1ADx70b9692VOkpJxKOBLLzAnJZOGXce5avHmaI=",
+        "MODULE.bazel": "sha256-h6wNZCNGKIHZXbGfcHMNg8f0OxEhx4OoqhA06skVNdo="
+    }
+}

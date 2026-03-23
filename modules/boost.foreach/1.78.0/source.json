@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-a9ALc2tooh0LZvuDkOdoyRtdJrP24X9fHQyIduf2yW8=",
+    "strip_prefix": "foreach-boost-1.78.0",
+    "url": "https://github.com/boostorg/foreach/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-HIfAslxCM2h0fM18ZPI5NvLoGiJ2rS2WiS1qdZ3bKks=",
+        "MODULE.bazel": "sha256-TS42J3SpBK4Ls5Mm8UwNXiSBrmiLQPkzIyvDl/VxAmA="
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-zMj/DKjJJICGEIkCrLMEio3Ahkslcev5aszS6hKKa9A=",
+    "strip_prefix": "circular_buffer-boost-1.78.0",
+    "url": "https://github.com/boostorg/circular_buffer/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-Oxd3h1RKxMeFu8mY7/RsrE9G5TcIhZ4PWCSDh1dyulI=",
+        "MODULE.bazel": "sha256-OrlzNNQuUMAg1EmgHWC2XtchD0N/I9NkkJxl7f3tLsc="
+    }
+}

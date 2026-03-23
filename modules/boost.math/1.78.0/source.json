@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-YEx09kN74gTGaum3VGBNF0NpbVHHParoNye2m4S6pY8=",
+    "strip_prefix": "math-boost-1.78.0",
+    "url": "https://github.com/boostorg/math/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-a97K9WCzJcUhXVhnxOFJ8Ayhb+0MyaVvnReQR4YlJUM=",
+        "MODULE.bazel": "sha256-d6ykMNcig1BnsOWjR0mwVEkqmFxSLBcTToy2JM/UtSQ="
+    }
+}

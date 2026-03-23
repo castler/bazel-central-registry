@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-yW0awN3eV1D2hh/sb4FUiNaLwTG3XdJ8N8PkmaxSIUM=",
+    "strip_prefix": "bimap-boost-1.78.0",
+    "url": "https://github.com/boostorg/bimap/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-1kHZJvnyC1XNR3KnbFteYiJwGYHJMsIcT4PuIlsmmB4=",
+        "MODULE.bazel": "sha256-4r+ia9okc2CKbnXvnB4YeP+05BSB/xFa1pxaFrJ1ofU="
+    }
+}

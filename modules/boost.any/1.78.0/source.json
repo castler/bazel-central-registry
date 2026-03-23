@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-tgbRH5Vf3BkoH7R0gwcIOUpPIcLIHpneYJtABbeudbA=",
+    "strip_prefix": "any-boost-1.78.0",
+    "url": "https://github.com/boostorg/any/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-CZ5p1zpZqFPRNPfi5VN6qVXeCh7qOmHCQAka9nCZpxU=",
+        "MODULE.bazel": "sha256-PLmyl7ta6q9EVpaCgcTtBhD8lxQjuqAys8Fx/aTKAG0="
+    }
+}

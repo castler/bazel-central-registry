@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-Aw5Y4y0DBraGn20jnU2nZMFh6h3BKoJ4VlMNbhuBnT8=",
+    "strip_prefix": "tti-boost-1.78.0",
+    "url": "https://github.com/boostorg/tti/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-rD3SNnbTt8oJbpoG4oofyz7/Mn2cKNcNqYFEhP3UY7Y=",
+        "MODULE.bazel": "sha256-ieAo1+Uw/SaN5AbCrKUFT9eMqH8PcuKyRUtGNRHyUuc="
+    }
+}

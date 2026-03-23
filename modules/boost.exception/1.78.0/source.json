@@ -1,0 +1,12 @@
+{
+    "integrity": "sha256-MiDaUAiwe7lQtE0+rScZPlkDb20jpEtAGYqjNlQcj+Q=",
+    "strip_prefix": "exception-boost-1.78.0",
+    "url": "https://github.com/boostorg/exception/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-v+aPPUaZvs4aBfQdb4PrK4YIbr1Vv8DT15mpmenlZIc=",
+        "MODULE.bazel": "sha256-qBep/s7KxazbKYD/wf7FCbUBpa+xUDc4ENgnR0qAROk=",
+        "test/BUILD.bazel": "sha256-8dqmwFvo8M2UsgeVJUbDvLZbbhA2xQm6tS92VBJCfuo=",
+        "test/MODULE.bazel": "sha256-5yNCDCIAdan6seoB5tE3lLpkJoMYEfAtuZWW+KBU22c="
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-7XjOdJg5KlSR1rbtA5hj2qIKOQUkvsjJOymKOpKbfe8=",
+    "strip_prefix": "locale-boost-1.78.0",
+    "url": "https://github.com/boostorg/locale/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-V/Qdog8//ABO404iHmNkTqH+Yi1A1Kd1fMqo0rTaFUE=",
+        "MODULE.bazel": "sha256-j/DRSQG7/LbL0/t14+ZOhqawE9bO+Vsl4u0Waue+SWg="
+    }
+}

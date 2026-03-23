@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-tBU+o+Olc+gtU4nUmwS2xJ4cvoYhJEqFKpa0v/ZzE7w=",
+    "strip_prefix": "geometry-boost-1.78.0",
+    "url": "https://github.com/boostorg/geometry/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-ulYg91bObYboMGx9mm/GBFZ7lO+QAsVWae5nLy0lcwA=",
+        "MODULE.bazel": "sha256-crmSem6PaAQZLK6OL3GMNEMJTtw0LeJa3utImxf8gLQ="
+    }
+}

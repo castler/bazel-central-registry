@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/boostorg/lockfree/archive/refs/tags/boost-1.78.0.tar.gz",
+    "integrity": "sha256-32AwDWrQFvhm8O71IxKW0bGIeYPNzWiZG8Z3o8qBh2E=",
+    "strip_prefix": "lockfree-boost-1.78.0",
+    "overlay": {
+        "BUILD.bazel": "sha256-/UzLNAaFhrybYruzqOsBTfR2o4M9h0lJ67GDimahLiE=",
+        "MODULE.bazel": "sha256-zoOkl7Ao7TO+mHo1FUjlBjZHL/H3W5vNubmHfD1pySk="
+    }
+}

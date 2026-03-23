@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-5jCNSX00ahyNOTxLfDfvhCCi2sHFVWJog6VAF5izVPM=",
+    "strip_prefix": "functional-boost-1.78.0",
+    "url": "https://github.com/boostorg/functional/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-ONzs8Zz0EODvFPt9gomIfdt1eaEmxd7aYtgJjY29Xqk=",
+        "MODULE.bazel": "sha256-1/fYl0Ni7rwuaZ1HENWPLffDOWBthiR9QrNgKT117Ms="
+    }
+}

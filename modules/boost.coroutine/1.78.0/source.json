@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-ZXn5wQXtL/Dw27lkVWWN9dTg5Kd/tnthO8B/uUYYtpc=",
+    "strip_prefix": "coroutine-boost-1.78.0",
+    "url": "https://github.com/boostorg/coroutine/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-aXEnTFNg+QNFjn8B22DtB2UeVFLgfM4w6bTo6GVvvYk=",
+        "MODULE.bazel": "sha256-Tnin5tfNUWrl2AvJfgM86xfSumH2DaZRX5L8daoqtDA="
+    }
+}

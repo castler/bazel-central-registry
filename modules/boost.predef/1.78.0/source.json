@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-SojMX7ebIfDEpTQOMeTVLVnlI4JIVw+hvXe0zRCizV0=",
+    "strip_prefix": "predef-boost-1.78.0",
+    "url": "https://github.com/boostorg/predef/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-mt0Q51PhHKJMc2UQ+c5Aa3yOXgKjzvfZkZz7chypY3E=",
+        "MODULE.bazel": "sha256-a8FSPmzijgv0o+VdaImF8m7J6S9BkJOlC34GyU2/IRg="
+    }
+}

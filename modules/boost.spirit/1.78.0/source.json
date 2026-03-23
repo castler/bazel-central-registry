@@ -1,0 +1,12 @@
+{
+    "integrity": "sha256-hRjk30S9U36DJM/d3EOhRBoeTqlY71C2FnaZJfxYSm0=",
+    "strip_prefix": "spirit-boost-1.78.0",
+    "url": "https://github.com/boostorg/spirit/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-xsLkYkcfhGLuaJ8e1vl82/x+w681jfWkgl5jSMiJZFk=",
+        "MODULE.bazel": "sha256-mUx9GDr59uFuFGJWMQ4V9ebKhNqqdON6QtrErxyOilU=",
+        "test/BUILD.bazel": "sha256-BJnucBe5OdwKDisFYwMpqY5ucAm4Zz2erU5aqu1UAeE=",
+        "test/MODULE.bazel": "sha256-SXkQCE1CheVuBAMYa6AOswYIjUv6F/XDWbodJEYw7Hs="
+    }
+}

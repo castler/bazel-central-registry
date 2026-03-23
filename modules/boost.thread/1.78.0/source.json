@@ -1,0 +1,15 @@
+{
+    "integrity": "sha256-5zS798X+YxUvIOBUb94tLeoyZ8n0Iw7KDS6590AZqRQ=",
+    "strip_prefix": "thread-boost-1.78.0",
+    "url": "https://github.com/boostorg/thread/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-34lphRChwjTMv32RT1N1lJVoM5dUt9uM+gDjIMCA9pY=",
+        "MODULE.bazel": "sha256-C3DXiBe2mwO8hAl05msIEd5yCJNVSKVNJJ9pEPkChF4=",
+        "test/BUILD.bazel": "sha256-etfgMv1+cxQoVhKqYEpZh5N61JghryiV78HltfsyG5k=",
+        "test/MODULE.bazel": "sha256-Y52bKwSkBbnXTjmtEOGGfm2/T90n4PAOH08Vyw+Sz4g="
+    },
+    "patches": {
+        "fix_assert.patch": "sha256-dI4h1MBB+qjM08R8lXSXNgCL3b0AhX96WjNBV2b1c1A="
+    }
+}

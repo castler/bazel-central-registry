@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-wjhob8uyzhWOiJO+TbV92HcH6XjqFeG3r1MQRA8zQlY=",
+    "strip_prefix": "endian-boost-1.78.0",
+    "url": "https://github.com/boostorg/endian/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-rAKvt+D+ldAZcBNo9uiLpmAA3cYdjzYRzkFYMjb6GJ4=",
+        "MODULE.bazel": "sha256-A0PdT8ZHIYOCl0pqCp6alaPNUstdxbvZXhvDHzk8Zjc="
+    }
+}

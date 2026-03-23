@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-f4KNzI1UZWQzYsHnI6tMRPiQ+c9LSv3fS1q3GoYBClM=",
+    "strip_prefix": "phoenix-boost-1.78.0",
+    "url": "https://github.com/boostorg/phoenix/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-MPrnMAfpKJIcg0g8cvpkH6Ge0Cm+OcJVtJc1StwGBCE=",
+        "MODULE.bazel": "sha256-6vYGToYctlbSeMGTDLPx8oytI07ue98YmsMyHjlijrE="
+    }
+}

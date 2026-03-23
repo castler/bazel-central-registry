@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-kJj765tuyW49zvd8f9ipf3Z460MiUFGmy1OjpmKTa4I=",
+    "strip_prefix": "property_tree-boost-1.78.0",
+    "url": "https://github.com/boostorg/property_tree/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-dUGckhKjEO15RBzbzmZCNokTTibRod4JzGYk66DYmhw=",
+        "MODULE.bazel": "sha256-Vi+UCZBlxFQaZIaO/M4D96HpRwByTSO94IZzy9hFUhk="
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-a4sajsJAjV6ka+vlc77IXxSUgc5hTS4uN3svrD6ClPs=",
+    "strip_prefix": "graph-boost-1.78.0",
+    "url": "https://github.com/boostorg/graph/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-HQYo4n/n7uEYMN35zXwJ9wP+n4oB74romXBBKeRqzk0=",
+        "MODULE.bazel": "sha256-JsXAmPjbGZY6Q9ZYtJc4Wh7leoreSS05BBbc1QQwOxg="
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-z3bN9O9v5IsvMElfDZ4ldT3A4x+pocvmydMs51mOVZw=",
+    "strip_prefix": "polygon-boost-1.78.0",
+    "url": "https://github.com/boostorg/polygon/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-ujnMg5AwerVXhXgBFohWzf6YtZWpbJVYPClNyikY1Nw=",
+        "MODULE.bazel": "sha256-B8DHKU3eRNHMCabGoVbgFWLUifCK3yNtxZFsnpfbOVw="
+    }
+}

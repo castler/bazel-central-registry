@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-UQ4jSUGzxGq0YvjBH8a1/SjRzUqQWPY5shPyEpd+BSQ=",
+    "strip_prefix": "tokenizer-boost-1.78.0",
+    "url": "https://github.com/boostorg/tokenizer/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-jVz6/ExL1IXaNwhtBIyLYGx/tpzx89s0NI+bfIrRJMs=",
+        "MODULE.bazel": "sha256-BLGzIRlTXRjGrprc/AzV5ax8Kzk8+naw+Gl7WL9X+s8="
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-KhImJNpCucznR8lyYFcM6LwDMLNXNV3io5zPrYq7GS4=",
+    "strip_prefix": "mpl-boost-1.78.0",
+    "url": "https://github.com/boostorg/mpl/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-a40QYtpJO54Q7hns9jFncxwfhieU/9tQuHx6QY8Iq48=",
+        "MODULE.bazel": "sha256-NY1UG9SbZJBzwDQicArK1jfOCVkVIHDDEhL2C3pHyu4="
+    }
+}

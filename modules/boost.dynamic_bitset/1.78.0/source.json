@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-fGhvghouRVhJ1ZJRdP/LZtmRFu4BVzznpFWSNXNA06A=",
+    "strip_prefix": "dynamic_bitset-boost-1.78.0",
+    "url": "https://github.com/boostorg/dynamic_bitset/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-uUPhCp+B0ASh+jyCTA4aJfD+F8e0aVL7ZVqbPM84wAE=",
+        "MODULE.bazel": "sha256-mBUILIOIsa7o41Neux6CckYox6kMuMe6VpGV9yG2bBo="
+    }
+}

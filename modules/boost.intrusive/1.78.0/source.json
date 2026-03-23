@@ -1,0 +1,10 @@
+{
+    "integrity": "sha256-sqeTyuOEpu8UMrXn8Of0Y8r7m2P1ykhsNbFrbCW71dA=",
+    "strip_prefix": "intrusive-boost-1.78.0",
+    "url": "https://github.com/boostorg/intrusive/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-yG0nq0wvb+vtngk1W5tczqWj0OTmQ7Q57N+gwjHJ3dg=",
+        "MODULE.bazel": "sha256-wIAGPwZs7sbu8tONGsVENWKSibU5cfTw1zhi91juJk8="
+    }
+}

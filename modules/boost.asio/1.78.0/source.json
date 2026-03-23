@@ -1,0 +1,13 @@
+{
+    "integrity": "sha256-0CErGQWDELFUtNSYd1hL+ZzzAPsGE7+leEDShcElqXk=",
+    "strip_prefix": "asio-boost-1.78.0",
+    "url": "https://github.com/boostorg/asio/archive/refs/tags/boost-1.78.0.tar.gz",
+    "patch_strip": 0,
+    "overlay": {
+        "BUILD.bazel": "sha256-DTN2uY3VwQZ9NnURE8MwkJBruKdUzTFUdHdqGjYiBds=",
+        "MODULE.bazel": "sha256-i6Nz5kJVlwX5NY4nSYFEjLgyTRNeYtRTOcoU1ERYVHs=",
+        "test/BUILD.bazel": "sha256-8fcIeYXVWHay4eYnKwdrvdtlPAEtVEqqBlUKdwZcCDY=",
+        "test/MODULE.bazel": "sha256-IVjuQMmJS48PiExcO0b/Od9Cq5VC8JLw/7lUWqnxF8U=",
+        "test/archetypes/BUILD.bazel": "sha256-d5MKVHwxKqaRPwR2x7feBKD6ovoOFZW9jzJSKwIRgdg="
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/boostorg/crc/archive/refs/tags/boost-1.78.0.tar.gz",
+    "integrity": "sha256-QpXWOxvXWk6osO7RMFyFyBVFaxF7qH8pnNIqdF9ZEiQ=",
+    "strip_prefix": "crc-boost-1.78.0",
+    "overlay": {
+        "BUILD.bazel": "sha256-BkeLNOgLjCd1Da/8in5MFxz6xXaxw9iz0VZ9gu5/k7I=",
+        "MODULE.bazel": "sha256-/3tzYNa4QLnHahvyEYk3drPYU++Wmj6ScO5GOL4oRN8="
+    }
+}
