@@ -11,6 +11,7 @@ Process:
 Configuration:
     - DEPENDENCY_VERSIONS: Standardized versions for common deps
     - LAST_AVAILABLE_VERSIONS: Proactively skip discontinued modules
+    - FIRST_AVAILABLE_VERSIONS: Skip modules not yet present in the target version
 """
 
 import argparse
@@ -44,6 +45,20 @@ DEPENDENCY_VERSIONS = {
 LAST_AVAILABLE_VERSIONS = {
     "boost.compatibility": "1.83.0",
     "boost.pin_version": "1.83.0",
+}
+
+# First available versions for modules not yet present in early Boost releases
+# If adding a version older than the value here, skip creating that module
+# This enables adding older Boost versions (e.g. 1.78.0) that predate certain libraries
+FIRST_AVAILABLE_VERSIONS = {
+    "boost.charconv": "1.85.0",  # Added to Boost 1.85
+    "boost.compat": "1.83.0",    # Added to Boost 1.83
+    "boost.hash2": "1.88.0",     # Added to Boost 1.88
+    "boost.mqtt5": "1.83.0",     # Added to Boost 1.83
+    "boost.mysql": "1.81.0",     # Added to Boost 1.81
+    "boost.pin_version": "1.88.0",  # BCR-only meta-module introduced in 1.88
+    "boost.scope": "1.85.0",     # Added to Boost 1.85
+    "boost.url": "1.79.0",       # Added to Boost 1.79
 }
 
 BUILD_CONTENT = """\
@@ -184,13 +199,22 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def find_closest_version(target_version: str, available_versions: list[str]) -> str:
+def find_closest_version(
+    target_version: str,
+    available_versions: list[str],
+    module_path: "Path | None" = None,
+) -> str:
     """Find the closest existing version to copy from.
 
     For BCR versions (X.Y.Z.bcr.N):
     - First tries to find the latest BCR version of the same base release (X.Y.Z.bcr.M where M < N)
     - If not found, tries the base version (X.Y.Z)
     - Falls back to closest lower version
+
+    For backward version addition (target older than all available):
+    - Uses the nearest higher version as source
+    - If module_path is provided, prefers versions that have overlay/BUILD.bazel to
+      ensure the overlay-based structure is preserved
 
     Examples:
     - 1.89.0.bcr.1 -> prefers 1.89.0
@@ -220,11 +244,27 @@ def find_closest_version(target_version: str, available_versions: list[str]) -> 
     if lower:
         return lower[-1]
 
-    # No lower version found - cannot copy from a newer version!
+    # No lower version found - try higher version (for backward version addition)
+    higher = [v for v in available_sorted if Semver(v) > target]
+    if higher:
+        # Prefer a version that has overlay/BUILD.bazel so the overlay-based
+        # structure is preserved (some old versions use patches/ instead)
+        chosen = higher[0]
+        if module_path is not None:
+            overlay_higher = [v for v in higher if (module_path / v / "overlay" / "BUILD.bazel").exists()]
+            if overlay_higher:
+                chosen = overlay_higher[0]
+        logging.warning(
+            "No older version found for %s, using nearest newer version as source: %s",
+            target_version,
+            chosen,
+        )
+        return chosen
+
+    # No version found at all
     raise ValueError(
-        f"Cannot find an older version to copy from for {target_version}. "
-        f"Available versions: {', '.join(available_sorted)}. "
-        f"Cannot copy from a newer version to an older version."
+        f"Cannot find any version to copy from for {target_version}. "
+        f"Available versions: {', '.join(available_sorted)}."
     )
 
 
@@ -271,6 +311,22 @@ def update_version_in_content(content: str, old_version: str, new_version: str) 
     if "compatibility_level" in content:
         content = re.sub(r"(compatibility_level\s*=\s*)\d+", rf"\g<1>{COMPATIBILITY_LEVEL}", content)
 
+    return content
+
+
+def remove_excluded_deps(content: str, excluded_modules: set[str]) -> str:
+    """Remove bazel_dep declarations for excluded modules from MODULE.bazel content.
+
+    Used when creating older version entries that predate certain modules
+    (e.g. creating 1.78.0 entries that should not reference boost.scope or boost.url).
+    """
+    for module_name in excluded_modules:
+        content = re.sub(
+            rf'^bazel_dep\(\s*name\s*=\s*"{re.escape(module_name)}"[^\n]*\n',
+            "",
+            content,
+            flags=re.MULTILINE,
+        )
     return content
 
 
@@ -663,6 +719,13 @@ def main() -> None:
                 logging.debug("Skipping %s (discontinued after %s)", module, last_available)
                 continue
 
+        # Check if this module didn't exist yet in the target version
+        if module in FIRST_AVAILABLE_VERSIONS:
+            first_available = FIRST_AVAILABLE_VERSIONS[module]
+            if Semver(base_version) < Semver(first_available):
+                logging.debug("Skipping %s (not available until %s)", module, first_available)
+                continue
+
         module_path = modules_dir / module
         module_versions = get_module_versions(module_path)
         tgt_path = module_path / args.version
@@ -682,7 +745,7 @@ def main() -> None:
 
         # Need to create this version
         try:
-            source_ver = find_closest_version(args.version, module_versions)
+            source_ver = find_closest_version(args.version, module_versions, module_path)
         except ValueError as e:
             logging.error("Cannot create %s version %s: %s", module, args.version, e)
             needs_manual_creation.append(module)
@@ -697,6 +760,35 @@ def main() -> None:
 
     # Run buildifier checks on all newly created modules
     if newly_created_paths:
+        run_buildifier_check(newly_created_paths, fix=True)
+
+    # Build the set of excluded modules for the target version and strip their
+    # bazel_dep declarations from all newly created MODULE.bazel files.
+    # This handles cases like adding 1.78.0 where some modules (boost.scope,
+    # boost.url, etc.) did not yet exist and must not appear as dependencies.
+    excluded_modules: set[str] = set()
+    for mod, first_ver in FIRST_AVAILABLE_VERSIONS.items():
+        if Semver(base_version) < Semver(first_ver):
+            excluded_modules.add(mod)
+    for mod, last_ver in LAST_AVAILABLE_VERSIONS.items():
+        if Semver(base_version) > Semver(last_ver).without_bcr():
+            excluded_modules.add(mod)
+
+    if excluded_modules:
+        logging.info(
+            "Removing deps on %s excluded modules from newly created MODULE.bazel files...",
+            len(excluded_modules),
+        )
+        for tgt_path in newly_created_paths:
+            # Update both MODULE.bazel and overlay/MODULE.bazel — they must stay in sync
+            for module_file in [tgt_path / "MODULE.bazel", tgt_path / "overlay" / "MODULE.bazel"]:
+                if module_file.exists():
+                    content = module_file.read_text(encoding="utf-8")
+                    updated = remove_excluded_deps(content, excluded_modules)
+                    if updated != content:
+                        module_file.write_text(updated, encoding="utf-8")
+                        logging.debug("Cleaned excluded deps in %s", module_file)
+        # Re-run buildifier after dep cleanup
         run_buildifier_check(newly_created_paths, fix=True)
 
     # Update integrity for all boost.* modules that have this version
@@ -720,6 +812,13 @@ def main() -> None:
 
     # Run buildifier check on boost meta-module
     run_buildifier_check([boost_dir / args.version], fix=True)
+
+    # Remove __pycache__ that Python may create inside modules/boost/ when this
+    # script is run; the update_integrity tool scans the directory for versions
+    # and would choke on the non-version directory name.
+    pycache = boost_dir / "__pycache__"
+    if pycache.exists():
+        shutil.rmtree(pycache)
 
     # Update integrity for boost meta-module
     logging.info("Updating integrity for boost meta-module...")
