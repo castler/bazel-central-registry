@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/lambda/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-SieC8Yv7r3JeIYNhJX/lQvVP7qSiWrsw08atFo0r+qs=",
+        "BUILD.bazel": "sha256-dxXrELys4+dda06p+g3JC4UfIzmk5sBWGYcYgqiBsao=",
         "MODULE.bazel": "sha256-4BPqru1N4CiNm3W1rcaBWFJ3g9o4M6vZH4SRCyrlqK4="
     }
 }

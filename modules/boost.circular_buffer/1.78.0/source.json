@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/circular_buffer/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-Oxd3h1RKxMeFu8mY7/RsrE9G5TcIhZ4PWCSDh1dyulI=",
+        "BUILD.bazel": "sha256-f1ASE+/DXiZHf0ofNOppe1PP2faWxGnRvKg2gAo5XPw=",
         "MODULE.bazel": "sha256-OrlzNNQuUMAg1EmgHWC2XtchD0N/I9NkkJxl7f3tLsc="
     }
 }

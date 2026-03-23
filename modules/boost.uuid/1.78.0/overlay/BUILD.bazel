@@ -4,7 +4,6 @@ cc_library(
     name = "boost.uuid",
     hdrs = glob([
         "include/**/*.hpp",
-        "include/**/*.h",
     ]),
     includes = ["include"],
     visibility = ["//visibility:public"],

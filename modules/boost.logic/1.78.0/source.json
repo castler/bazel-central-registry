@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/logic/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-xaGx3FkAV4i52yodRg6XRR2R+lcncZs1oiOAQFgfxPU=",
+        "BUILD.bazel": "sha256-/wuzxrCVK9FzyQekvvFTPbVan+Vwod6t8Uff2WqoUuE=",
         "MODULE.bazel": "sha256-JDjRFDd/RFPP722RC+6palEOMO1u+Mo100AC5YUb1mE="
     }
 }

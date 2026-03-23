@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/bimap/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-1kHZJvnyC1XNR3KnbFteYiJwGYHJMsIcT4PuIlsmmB4=",
+        "BUILD.bazel": "sha256-NJEjqGOjhOOX5UCkz2KbgMGoQObS9EgvT2/H/T0JB/8=",
         "MODULE.bazel": "sha256-4r+ia9okc2CKbnXvnB4YeP+05BSB/xFa1pxaFrJ1ofU="
     }
 }

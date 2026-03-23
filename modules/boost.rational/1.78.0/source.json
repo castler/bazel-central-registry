@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/rational/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-SIs2n6uofzILgx3p3UIu3XAu88h8Ki64N1I4OfppSSc=",
+        "BUILD.bazel": "sha256-merEb+P5A6kUq8XjVxg+sxsTnibShiwk5kyU5FTA7uQ=",
         "MODULE.bazel": "sha256-MlP7F7Cnpq5QAdHmr9OF8DiIfYp1Wdl8RDCQxR/70NI="
     }
 }

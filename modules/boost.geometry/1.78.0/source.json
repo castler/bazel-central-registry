@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/geometry/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-ulYg91bObYboMGx9mm/GBFZ7lO+QAsVWae5nLy0lcwA=",
+        "BUILD.bazel": "sha256-o/H2zl/JbaoZcnA4czbWZHWkU7LCAsk82NadVQd+Qe8=",
         "MODULE.bazel": "sha256-crmSem6PaAQZLK6OL3GMNEMJTtw0LeJa3utImxf8gLQ="
     }
 }

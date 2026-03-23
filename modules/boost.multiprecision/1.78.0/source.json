@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/multiprecision/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-7m+NFWxhQA8RO9ZaCfSjgR3k27JMDQB6mTWr8/mAHyY=",
+        "BUILD.bazel": "sha256-Ybih/boPCAXBK6qBF3cjg4ndn//0FqPAP2waGgpMvUM=",
         "MODULE.bazel": "sha256-/bREFtCZxbd7ngBHfXhv5iDd+jfi0wObQzj+cErtd/o="
     }
 }

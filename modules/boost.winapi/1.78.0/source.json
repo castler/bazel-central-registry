@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/winapi/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-yWQv9wKLpt2FWr2H5u8iDamszqUteM9UWbMoCYZzaq0=",
+        "BUILD.bazel": "sha256-TGPr2XX2fo6cWUrIRXR1eHSQd4tEJas2zemj36+getA=",
         "MODULE.bazel": "sha256-3KzBt2snDPiKPylcZH9A9ZrYZTD9Ul/BsF9nD14SEqc="
     }
 }

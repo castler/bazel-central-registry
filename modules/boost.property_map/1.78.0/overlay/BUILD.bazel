@@ -6,7 +6,6 @@ cc_library(
     name = "boost.property_map",
     hdrs = glob([
         "include/**/*.hpp",
-        "include/**/*.h",
     ]),
     features = [
         "parse_headers",

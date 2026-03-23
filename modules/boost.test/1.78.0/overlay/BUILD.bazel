@@ -14,7 +14,6 @@ cc_library(
     ),
     hdrs = glob([
         "include/**/*.hpp",
-        "include/**/*.h",
         "include/**/*.ipp",
     ]),
     defines = [

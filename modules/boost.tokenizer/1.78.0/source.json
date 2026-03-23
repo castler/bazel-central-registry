@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/tokenizer/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-jVz6/ExL1IXaNwhtBIyLYGx/tpzx89s0NI+bfIrRJMs=",
+        "BUILD.bazel": "sha256-Lmzz8wp7uPWNNinJcJrJyxMeQHhZ4csC0wdifOlCzbI=",
         "MODULE.bazel": "sha256-BLGzIRlTXRjGrprc/AzV5ax8Kzk8+naw+Gl7WL9X+s8="
     }
 }

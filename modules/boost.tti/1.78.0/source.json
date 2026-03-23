@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/tti/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-rD3SNnbTt8oJbpoG4oofyz7/Mn2cKNcNqYFEhP3UY7Y=",
+        "BUILD.bazel": "sha256-sLLFVZGtLzaKx5kG9YAMvLfg1moeniX3F/6LjHWqnVA=",
         "MODULE.bazel": "sha256-ieAo1+Uw/SaN5AbCrKUFT9eMqH8PcuKyRUtGNRHyUuc="
     }
 }

@@ -4,7 +4,7 @@
     "strip_prefix": "uuid-boost-1.78.0",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-7cDjQvcq+319FdxVetEjYKYFC4gGadFIEKfZsn1KDOc=",
+        "BUILD.bazel": "sha256-mFryYbZjlcsuqwcqTh4Wp01JRWpvwrSACqL5XLu5Swg=",
         "MODULE.bazel": "sha256-EThqK57dyf5ubArsNo5C2q0r9GKfgTDeCM0eKrckU0M="
     }
 }

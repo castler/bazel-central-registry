@@ -7,7 +7,6 @@ cc_library(
     hdrs = glob(
         [
             "include/**/*.hpp",
-            "include/**/*.h",
             "include/**/*.ipp",
         ],
         exclude = ["include/boost/random/detail/mixmax_skip_N17.ipp"],

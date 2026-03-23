@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/conversion/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-RwHAv9jrlNDTJAByh/raVzsdt0X7VW8j7f1HcvIdGOc=",
+        "BUILD.bazel": "sha256-qRlQV5aUf9MUcNG93605OYaztS2z3GEppXFszywxPoI=",
         "MODULE.bazel": "sha256-hbBG2syECw3kEO5Bh674NM5LgVGuNpB31rovb9+93lI="
     }
 }

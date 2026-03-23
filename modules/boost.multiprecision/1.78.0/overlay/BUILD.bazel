@@ -7,7 +7,6 @@ cc_library(
     hdrs = glob(
         [
             "include/**/*.hpp",
-            "include/**/*.h",
         ],
         exclude = [
             "include/boost/multiprecision/complex128.hpp",
@@ -17,7 +16,6 @@ cc_library(
             "include/boost/multiprecision/detail/**/*.hpp",
             "include/boost/multiprecision/eigen.hpp",
             "include/boost/multiprecision/float128.hpp",
-            "include/boost/multiprecision/fwd.hpp",
             "include/boost/multiprecision/gmp.hpp",
             "include/boost/multiprecision/mpc.hpp",
             "include/boost/multiprecision/mpfi.hpp",
@@ -39,7 +37,6 @@ cc_library(
         "include/boost/multiprecision/detail/**/*.hpp",
         "include/boost/multiprecision/eigen.hpp",
         "include/boost/multiprecision/float128.hpp",
-        "include/boost/multiprecision/fwd.hpp",
         "include/boost/multiprecision/gmp.hpp",
         "include/boost/multiprecision/mpc.hpp",
         "include/boost/multiprecision/mpfi.hpp",

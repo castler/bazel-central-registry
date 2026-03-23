@@ -6,7 +6,6 @@ cc_library(
     name = "boost.tokenizer",
     hdrs = glob([
         "include/**/*.hpp",
-        "include/**/*.h",
     ]),
     features = [
         "parse_headers",

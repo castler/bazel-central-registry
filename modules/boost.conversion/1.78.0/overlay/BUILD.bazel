@@ -6,7 +6,6 @@ cc_library(
     name = "boost.conversion",
     hdrs = glob([
         "include/**/*.hpp",
-        "include/**/*.h",
     ]),
     features = [
         "parse_headers",

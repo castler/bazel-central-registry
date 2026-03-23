@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/predef/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-mt0Q51PhHKJMc2UQ+c5Aa3yOXgKjzvfZkZz7chypY3E=",
+        "BUILD.bazel": "sha256-gCVx6/WeJbKPAI74+sSCkGQVsIRhiSRvQoP91cpqMeQ=",
         "MODULE.bazel": "sha256-a8FSPmzijgv0o+VdaImF8m7J6S9BkJOlC34GyU2/IRg="
     }
 }

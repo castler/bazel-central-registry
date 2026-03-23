@@ -10,7 +10,6 @@ cc_library(
     ]),
     hdrs = glob([
         "include/**/*.hpp",
-        "include/**/*.h",
     ]),
     defines = [
         "BOOST_ALL_NO_LIB",

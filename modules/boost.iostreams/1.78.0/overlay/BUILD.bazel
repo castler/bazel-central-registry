@@ -12,7 +12,6 @@ cc_library(
     ),
     hdrs = glob([
         "include/**/*.hpp",
-        "include/**/*.h",
     ]),
     defines = [
         "BOOST_IOSTREAMS_NO_LIB",

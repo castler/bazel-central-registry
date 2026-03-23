@@ -56,7 +56,6 @@ cc_library(
     hdrs = glob(
         [
             "include/**/*.hpp",
-            "include/**/*.h",
         ],
         exclude = _POSIX_HDRS + _WINDOWS_HDRS + _MAC_HDRS,
     ),

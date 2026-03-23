@@ -3,7 +3,7 @@
     "integrity": "sha256-oZvMcjER7SwRRYG5jy/asRLZFCQ2kiOnedec0oEgMfU=",
     "strip_prefix": "leaf-boost-1.78.0",
     "overlay": {
-        "BUILD.bazel": "sha256-Ht9wdP2K+A7RSWogu10d+tz6N0TxHIGNtpf+q6jp+aI=",
+        "BUILD.bazel": "sha256-zVa98YGF/jvMejjVo6NkkrrYcnW7yYMG1/4j6wt+TWc=",
         "MODULE.bazel": "sha256-X2iyYSX1YggvtNSNZqiCDyZKUMwpRoVcAQBk1lUq0LE="
     }
 }

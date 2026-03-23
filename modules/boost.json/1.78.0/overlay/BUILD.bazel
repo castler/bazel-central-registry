@@ -8,7 +8,6 @@ cc_library(
         [
             "include/**/*.hpp",
             "include/**/*.ipp",
-            "include/**/*.h",
         ],
         exclude = [
             "include/boost/json/detail/**/*.hpp",
@@ -17,7 +16,6 @@ cc_library(
             "include/boost/json/impl/parse.ipp",
             "include/boost/json/impl/string.hpp",
             "include/boost/json/impl/string.ipp",
-            "include/boost/json/impl/value.hpp",
             "include/boost/json/impl/value.ipp",
             "include/boost/json/impl/value_ref.hpp",
             "include/boost/json/impl/visit.hpp",
@@ -34,7 +32,6 @@ cc_library(
         "include/boost/json/impl/parse.ipp",
         "include/boost/json/impl/string.hpp",
         "include/boost/json/impl/string.ipp",
-        "include/boost/json/impl/value.hpp",
         "include/boost/json/impl/value.ipp",
         "include/boost/json/impl/value_ref.hpp",
         "include/boost/json/impl/visit.hpp",

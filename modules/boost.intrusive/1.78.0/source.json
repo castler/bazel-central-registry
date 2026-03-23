@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/intrusive/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-yG0nq0wvb+vtngk1W5tczqWj0OTmQ7Q57N+gwjHJ3dg=",
+        "BUILD.bazel": "sha256-r5JxJR3a5ebx+64kezzqhgjG96mlvwo27o1vRuCkPmY=",
         "MODULE.bazel": "sha256-wIAGPwZs7sbu8tONGsVENWKSibU5cfTw1zhi91juJk8="
     }
 }

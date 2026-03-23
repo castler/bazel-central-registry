@@ -5,7 +5,6 @@ package(default_visibility = ["//visibility:public"])
 cc_library(
     name = "boost.predef",
     hdrs = glob([
-        "include/**/*.hpp",
         "include/**/*.h",
     ]),
     features = [

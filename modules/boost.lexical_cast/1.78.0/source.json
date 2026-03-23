@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/lexical_cast/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-NC1nCKfoDjuljWhwg3CDDv6qcJKqH9zcMyn010Brocs=",
+        "BUILD.bazel": "sha256-wr4CyB3wWdBvqHMVfd5A8PkgmoGihTDBbn/VypJA4do=",
         "MODULE.bazel": "sha256-eVQ6+T2qfnFTU4/ydbf/gpquTV1VrDnVexe9VO/j3jc="
     }
 }

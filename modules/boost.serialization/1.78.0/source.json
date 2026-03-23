@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/serialization/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-5/T8r79pSkaZrPTjWW4nd9s+OyhVKKMkiAKbNsNwjck=",
+        "BUILD.bazel": "sha256-aEPWn1imEbfZbiXigMetbztg0eAz0wUXJRLwgFxfwIA=",
         "MODULE.bazel": "sha256-eQsCW/x0JjaOtA0Vhu02a77/kR0c+NZWzd4SCJ+kwzA=",
         "test/BUILD.bazel": "sha256-1fLDxMdCzwpRj1Rt1+XgMQq3tHzeuTBHVGohD88CUr8=",
         "test/MODULE.bazel": "sha256-MYkZv9ohFtKypuGaYF2QXdqDNc8pKfnb2OGe9FmMT2U="

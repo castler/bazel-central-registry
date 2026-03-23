@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/asio/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-DTN2uY3VwQZ9NnURE8MwkJBruKdUzTFUdHdqGjYiBds=",
+        "BUILD.bazel": "sha256-NbjUdNVRism74i0YnfgJUa2ALqKJ5XwR7JrmMH7m/4Y=",
         "MODULE.bazel": "sha256-i6Nz5kJVlwX5NY4nSYFEjLgyTRNeYtRTOcoU1ERYVHs=",
         "test/BUILD.bazel": "sha256-8fcIeYXVWHay4eYnKwdrvdtlPAEtVEqqBlUKdwZcCDY=",
         "test/MODULE.bazel": "sha256-IVjuQMmJS48PiExcO0b/Od9Cq5VC8JLw/7lUWqnxF8U=",

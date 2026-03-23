@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/endian/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-rAKvt+D+ldAZcBNo9uiLpmAA3cYdjzYRzkFYMjb6GJ4=",
+        "BUILD.bazel": "sha256-QuHMFyosJnYgBOJlHJ7M5bFYAlDkt/21ezIhpAgoC4k=",
         "MODULE.bazel": "sha256-A0PdT8ZHIYOCl0pqCp6alaPNUstdxbvZXhvDHzk8Zjc="
     }
 }

@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/xpressive/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-SeJebIy/XK5uiByydPx1ZG2VK/XFtcauAQ3RWXKNEWc=",
+        "BUILD.bazel": "sha256-bQnuBkCtg4CcPfZGkvHnlGNvSYljhJpz5LG8+uCX3bc=",
         "MODULE.bazel": "sha256-PKR1iUQp4YGVSWa5iI7ntdJvyF3G8IC8Fb520bYzZLk="
     }
 }

@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/qvm/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-uSK5489JE1LqSmsBJ/LRA+MEwAOr4GYFTOh3R9isip0=",
+        "BUILD.bazel": "sha256-CJFNyBqllRFRHHToj5j0CZXigPxktpuh3IPyafbpqXg=",
         "MODULE.bazel": "sha256-QdiAcUKtHg4uKRc63SDFOvS4qhH7NCxHy6Pp/ACpbOM="
     }
 }
