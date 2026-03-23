@@ -6,12 +6,10 @@ cc_library(
     name = "boost.program_options",
     srcs = glob([
         "src/**/*.cpp",
-        "src/**/*.ipp",
     ]),
     hdrs = glob([
         "include/**/*.hpp",
         "include/**/*.h",
-        "include/**/*.ipp",
     ]),
     defines = ["BOOST_ALL_NO_LIB"],
     includes = ["include"],
