@@ -8,5 +8,8 @@
         "MODULE.bazel": "sha256-PqBaxi0zyH/vpqv1DsXYrdYLR78i571hN1D2YP+FhTI=",
         "requirements.txt": "sha256-4J9lbBMLnAiyxatxh8iRKV5Entd/6+oqbO7pzJjMsPw=",
         "requirements_lock.txt": "sha256-bhbTk9rCZQYk7tsaYi8HThs1n5DeCd+MUQBkyolEVX4="
+    },
+    "patches": {
+        "fix_numpy2_compat.patch": "sha256-AfcoirOAynDWBvLcwlo0McQguXPT0bw/XhDwWYd0DGI="
     }
 }

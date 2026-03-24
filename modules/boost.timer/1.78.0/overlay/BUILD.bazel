@@ -15,7 +15,9 @@ cc_library(
     includes = ["include"],
     visibility = ["//visibility:public"],
     deps = [
+        "@boost.chrono",
         "@boost.config",
+        "@boost.core",
         "@boost.io",
         "@boost.predef",
     ],

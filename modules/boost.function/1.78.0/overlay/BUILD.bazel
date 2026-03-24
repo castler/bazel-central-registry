@@ -30,6 +30,7 @@ cc_library(
         "@boost.core",
         "@boost.preprocessor",
         "@boost.throw_exception",
+        "@boost.type_index",
         "@boost.type_traits",
         "@boost.typeof",
     ],

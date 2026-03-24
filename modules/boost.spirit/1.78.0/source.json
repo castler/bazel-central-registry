@@ -4,7 +4,7 @@
     "url": "https://github.com/boostorg/spirit/archive/refs/tags/boost-1.78.0.tar.gz",
     "patch_strip": 0,
     "overlay": {
-        "BUILD.bazel": "sha256-/E1Ss8CHR/Ec0tnMybiDH10LD3/21P5CHyVnusOKgk0=",
+        "BUILD.bazel": "sha256-SFMsokQ5DmJUmnF6bQo25WQrVW/Hmx3Al51n0ShXePc=",
         "MODULE.bazel": "sha256-mUx9GDr59uFuFGJWMQ4V9ebKhNqqdON6QtrErxyOilU=",
         "test/BUILD.bazel": "sha256-BJnucBe5OdwKDisFYwMpqY5ucAm4Zz2erU5aqu1UAeE=",
         "test/MODULE.bazel": "sha256-SXkQCE1CheVuBAMYa6AOswYIjUv6F/XDWbodJEYw7Hs="

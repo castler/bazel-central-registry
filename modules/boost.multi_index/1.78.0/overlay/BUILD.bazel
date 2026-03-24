@@ -21,6 +21,7 @@ cc_library(
         "@boost.config",
         "@boost.container_hash",
         "@boost.core",
+        "@boost.foreach",
         "@boost.integer",
         "@boost.iterator",
         "@boost.move",
