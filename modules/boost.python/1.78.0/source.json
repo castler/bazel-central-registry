@@ -2,14 +2,10 @@
     "url": "https://github.com/boostorg/python/archive/refs/tags/boost-1.78.0.tar.gz",
     "integrity": "sha256-DAh8Q6i7KS6ru9oAh1XvCXcYdHwkC2wDMrywKmZSilo=",
     "strip_prefix": "python-boost-1.78.0",
-    "patch_strip": 0,
     "overlay": {
         "BUILD.bazel": "sha256-KbGk4bLfT9H8ueOW9OhtphJS608IwHr111vTgx1PXZ8=",
         "MODULE.bazel": "sha256-PqBaxi0zyH/vpqv1DsXYrdYLR78i571hN1D2YP+FhTI=",
-        "requirements.txt": "sha256-4J9lbBMLnAiyxatxh8iRKV5Entd/6+oqbO7pzJjMsPw=",
-        "requirements_lock.txt": "sha256-bhbTk9rCZQYk7tsaYi8HThs1n5DeCd+MUQBkyolEVX4="
-    },
-    "patches": {
-        "fix_numpy2_compat.patch": "sha256-AfcoirOAynDWBvLcwlo0McQguXPT0bw/XhDwWYd0DGI="
+        "requirements.txt": "sha256-EUFldgf+4K8jEaKc083ohCp1tclt/d2vxQNw7BS8J1E=",
+        "requirements_lock.txt": "sha256-DDcTnP+AXfi01oSzVhV91XayfpvkI0ip9zurnb79A94="
     }
 }
