@@ -1,12 +1,8 @@
 {
     "integrity": "sha256-7XjOdJg5KlSR1rbtA5hj2qIKOQUkvsjJOymKOpKbfe8=",
     "overlay": {
-        "BUILD.bazel": "sha256-qA8+oXE3dlQkJ/GsePTqg9+4uB3oCBOtX9A1h7H1FZA=",
+        "BUILD.bazel": "sha256-4RdOqpq8zWYydUe9vNbFZc3kYi4tHO5xzVXRkVAbV44=",
         "MODULE.bazel": "sha256-j/DRSQG7/LbL0/t14+ZOhqawE9bO+Vsl4u0Waue+SWg="
-    },
-    "patch_strip": 0,
-    "patches": {
-        "fix_missing_includes.patch": "sha256-CQVUHqmyr30vTT2JjeW/JwcYQdWJHIa03aa0SnGbURs="
     },
     "strip_prefix": "locale-boost-1.78.0",
     "url": "https://github.com/boostorg/locale/archive/refs/tags/boost-1.78.0.tar.gz"

@@ -78,7 +78,6 @@ cc_library(
     ],
     includes = ["include"],
     local_defines = [
-        "BOOST_LOCALE_SOURCE",
         "BOOST_LOCALE_WITH_ICONV",
         "_CRT_SECURE_NO_WARNINGS",
         "_SCL_SECURE_NO_WARNINGS",
